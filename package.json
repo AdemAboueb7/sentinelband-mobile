@@ -1,0 +1,58 @@
+{
+  "name": "sentinelband-mobile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^7.3.16",
+    "@react-navigation/native": "^7.1.14",
+    "@react-navigation/native-stack": "^7.3.21",
+    "expo": "~57.0.27",
+    "expo-constants": "~57.0.21",
+    "expo-haptics": "~57.0.3",
+    "expo-linking": "~57.0.12",
+    "expo-notifications": "~57.0.22",
+    "expo-secure-store": "~57.0.4",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-gesture-handler": "~2.32.0",
+    "react-native-reanimated": "4.5.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
+    "react-native-svg": "^15.15.4",
+    "react-native-worklets": "^0.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@react-native/jest-preset": "^0.87.1",
+    "babel-preset-expo": "^57.0.14",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.1.0",
+    "jest": "^29.7.0",
+    "jest-expo": "~57.0.0"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest --watchAll=false",
+    "test:ci": "jest --ci",
+    "lint": "eslint src --ext .js,.jsx"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.test.{js,jsx}"
+    ],
+    "transform": {
+      "^.+\\.[jt]sx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^react-native$": "<rootDir>/__mocks__/react-native.js"
+    }
+  },
+  "private": true
+}

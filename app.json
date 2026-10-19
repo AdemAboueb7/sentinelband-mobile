@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "SentinelBand",
+    "slug": "sentinelband-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "androidNavigationBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#111827"
+    },
+    "scheme": "sentinelband",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.sentinelband.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png",
+        "backgroundColor": "#0A0E1A"
+      },
+      "navigationBar": {
+        "barStyle": "light-content",
+        "backgroundColor": "#111827"
+      },
+      "package": "com.sentinelband.mobile",
+      "permissions": [
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#1a3a5c",
+          "sounds": []
+        }
+      ],
+      "expo-secure-store"
+    ],
+
+  }
+}
